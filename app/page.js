@@ -1,103 +1,83 @@
 import Image from "next/image";
 
-export default function Home() {
+const Home = ()=> {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+      <main className="w-full">
+  
+        <div className="w-full h-[80vh] justify-center items-center flex bg-cover bg-center bg-no-repeat" 
+         style={{ backgroundImage: "url('public/images/image1.webp')" }}>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="text-center text-black z-10">
+            <h1 className="text-4xl font-bold">Welcome To Jim-One Motors</h1>
+            <p className="mt-4 text-xl">Reliable, Durable, and Affordable Cars</p>
+            <button className="mt-6 px-6 py-3 bg-amber-500 text-white rounded-lg shadow-lg hover:text-slate-600">Explore Cars</button>
+          </div>
+         </div>
+
+          {/* About Section  */}
+          <div className="py-16 text-center bg-gray-100 shadow-md">
+            <h2 className="text-3xl font-bold text-gray-800">About Us</h2>
+            <p className="w-3/4 text-gray-600 mx-auto mt-4">
+              At Jim-One Motors, we provide high-quality vehicles, ensuring customer satisfaction and the best deals in the market.
+            </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        {/* Service Section */}
+
+        <section className="py-16 bg-white">
+          <h2 className="text-center text-3xl font-bold text-gray-800">Our Services</h2>
+          <div className="mt-8 flex justify-center gap-8 flex-wrap">
+            <div className="w-64 p-6 bg-gray-200 text-center rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold">Car Sales</h3>
+              <p className="mt-2 text-gray-600">We sell top quality vehicles at unbeatable prices.</p>
+            </div>
+            <div className="w-64 p-6 bg-gray-200 text-center rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold">Car Swaps</h3>
+              <p className="mt-2 text-gray-600">Swaps your car with the best upgrade options available.</p>
+            </div>
+            <div className="w-64 p-6 bg-gray-200 text-center rounded-lg shadow-md">
+              <h3 className="text-xl font-bold">Car Purchases</h3>
+              <p className="mt-2 text-gray-600">We buy cars at competitive rates.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Cars Section */}
+
+        <section className="py-16 bg-gray-100">
+        <h2 className="text-center font-bold text-3xl text-gray-800">Feature Cars</h2>
+        <div className="mt-6 flex justify-center flex-wrap gap-8">
+          <div className="w-64 p-4 rounded-lg shadow-lg bg-white">
+              
+            <h3 className="mt-4 text-lg font-semibold">Toyota Camry 2022</h3>
+            <p className="text-gray-500">$25,000</p>
+          </div>
+          <div className="w-64 p-4 rounded-lg shadow-lg bg-white">
+    
+            <h3 className="mt-4 text-lg font-semibold">Mercedes Benz C300</h3>
+            <p className="text-gray-500">$35,000</p>
+          </div>
+          <div className="w-64 p-4 rounded-lg shadow-lg bg-white">
+            
+            <h3 className="mt-4 text-lg font-semibold">Lexus RX 350</h3>
+            <p className="text-gray-500">$40,000</p>
+          </div>
+        </div>
+        </section>
+
+        {/* Call to Action Section*/}
+
+        <section className="py-6 text-center bg-amber-400 text-white">
+          <h2 className="text-3xl font-bold">Find Your Dream Car Today</h2>
+          <p className="mt-4">Visits Jim-One Motors or contact us for the best deals.</p>
+          <button className="mt-6 px-6 py-3 text-white bg-amber-500 font-bold rounded-lg shadow-md hover:bg-gray-500">Contact Us</button>
+        </section>
+          <div>
+          <Image src="https://res.cloudinary.com/dyp62yu3w/image/upload/v1743079739/image1_erbtgz.webp" alt="car" width={100} height={100}/>
+          </div>
+        
+       </main>
   );
 }
+
+export default Home;

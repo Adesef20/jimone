@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
- } from "@/components/ui/accordion";
+ } from "@/Components/ui/accordion";
 import { useState, Fragment, useEffect } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";

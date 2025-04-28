@@ -3,12 +3,12 @@ import  Image  from "next/image";
 import Link from "next/link";
 import {
   Accordion,
-
+  
   AccordionContent,
-
+  
   AccordionItem,
-
-  AccordionTrigger,
+  
+  AccordionTrigger
   
  } from "@/Components/ui/Accordion.jsx";
 

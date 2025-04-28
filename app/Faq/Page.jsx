@@ -8,8 +8,8 @@
     AccordionItem,
 
     AccordionTrigger,
-    
-  } from "@/Components/ui/Accordion"
+
+  } from "@/Components/ui/Accordion.jsx";
   
 const Faq = () => {
 

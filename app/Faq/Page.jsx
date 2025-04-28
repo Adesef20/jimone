@@ -5,7 +5,7 @@
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-  } from "@/Components/ui/Accordion"
+  } from "@/Components/ui/accordion"
   
 const Faq = () => {
 

@@ -1,15 +1,6 @@
  'use client';
 
- import {
-    Accordion,
-
-    AccordionContent,
-
-    AccordionItem,
-
-    AccordionTrigger,
-
-  } from "@/Components/ui/Accordion.jsx";
+ import { Accordion, AccordionItem, AccordionContent, AccordionTrigger } from "@/Components/ui/Accordion"
   
 const Faq = () => {
 

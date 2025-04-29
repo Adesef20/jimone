@@ -1,16 +1,7 @@
 "use client"
 import  Image  from "next/image";
 import Link from "next/link";
-import {
-  Accordion,
-  
-  AccordionContent,
-  
-  AccordionItem,
-  
-  AccordionTrigger
-  
- } from "@/Components/ui/Accordion.jsx";
+import { Accordion, AccordionItem, AccordionContent, AccordionTrigger } from "@/Components/ui/Accordion"
 
 import { useState, Fragment, useEffect } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";

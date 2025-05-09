@@ -413,7 +413,7 @@ const Home = () => {
       </main>
       </Fragment>
   );
-};
+}
 
 export default Home;
     

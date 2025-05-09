@@ -55,7 +55,7 @@ const Navbar = ()=>{
           </div>
 
             {isOpen &&(
-        <div className="md:hidden flex flex-col bg-gray-100 text-black gap-4 px-6 py-4">
+        <div className="md:hidden flex flex-col bg-gray-100 text-black gap-4 px-6 py-4 shadow-md absolute top-15 left-0 w-full z-50">
               <Link href="/" onClick={() => setIsOpen(false)}>home</Link>
                 <Link href="/About" onClick={() => setIsOpen(false)}>about</Link>
                 <Link href="/Service" onClick={() => setIsOpen(false)}>service</Link>

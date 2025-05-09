@@ -1,7 +1,7 @@
 "use client"
 import  Image  from "next/image";
 import Link from "next/link";
-import { Accordion, AccordionItem, AccordionContent, AccordionTrigger } from "@/Components/ui/Accordion"
+// import {  AccordionItem, AccordionContent, AccordionTrigger, Accordion } from "@/Components/ui/Accordion"
 
 import { useState, Fragment, useEffect } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
@@ -209,7 +209,7 @@ const Home = () => {
 
         {/* Faq section */}
 
-        <section className="p-2 shadow-lg bg-gray-200 items-center flex flex-col justify-center">
+        {/* <section className="p-2 shadow-lg bg-gray-200 items-center flex flex-col justify-center">
           <h1 className="text-center font-bold text-3xl text-gray-800 p-3">
             Frequently Ask Question
           </h1>
@@ -263,7 +263,7 @@ const Home = () => {
               </AccordionItem>
             </Accordion>
           </div>
-        </section>
+        </section> */}
 
         {/* Features Cars Section */} 
 

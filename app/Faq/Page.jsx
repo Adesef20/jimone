@@ -1,6 +1,7 @@
 'use client';
 
-import { Accordion, AccordionItem } from "@heroui/accordion";
+import { Accordion, AccordionItem } from "@/Components/ui/Accordion";
+
 
 export default function Faq() {
   return (

@@ -9,7 +9,8 @@ export default function Faq() {
         Frequently Asked Questions
       </h1>
       <div className="w-full max-w-lg p-4">
-        <Accordion selectionMode="multiple">
+        {/* Removed selectionMode to prevent DOM error */}
+        <Accordion>
           <AccordionItem key="1" title="What types of car do you sell?">
             We sell a wide range of vehicles: sedans, SUVs, trucks, and luxury cars.
           </AccordionItem>

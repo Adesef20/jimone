@@ -19,8 +19,8 @@ const Login = () =>{
         console.log("Logging in with", FormData)
     }
     return(
-        <div className="mt-10 flex flex-col items-center justify-center p-6 rounded w-full bg-white">
-            <h1 className="text-2xl font-bold mb-4 text-center rounded-lg">Login Here</h1>
+        <div className="mt-10 rounded flex flex-col items-center justify-center p-6 w-full bg-white">
+            <h1 className="text-2xl font-bold mb-4 text-center">Login Here</h1>
             <p className="text-center mt-2 text-gray-900">Welcome back! please log in here</p>
             <form onSubmit={handleSubmit} className="space-y-4 w-96 shadow-2xl px-4 rounded mt-4">
                 <input 

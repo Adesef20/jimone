@@ -207,8 +207,36 @@ const Home = () => {
         </section>
 
         {/* Faq section */}
-
-     <Faq></Faq>       
+       <section className="max-w-2xl mx-auto p-4 shadow-lg rounded-lg bg-slate-200 mt-10 mb-20 sm:mb-14 md:mb-20 lg:mb-24">
+             <h1 className="text-center font-bold text-3xl text-gray-800 mb-6">
+               Frequency Ask Question
+             </h1>
+             <div className="space-y-4">
+       
+               {faqList.map((item, index) => (
+                <div key={index} className="border rounded-lg overflow-hidden bg-white">
+                 <button 
+                 onClick={() => toggle(index)}
+                 className="w-full text-left px-4 py-3 font-semibold text-gray-800 bg-gray-100 hover:bg-gray-200 transition flex justify-between items-center"
+                 >
+       
+                <span>{item.question}</span>
+                {openIndex === index ? (
+                 <FaChevronUp className="h-5 w-5 text-gray-600 ml-2"/>
+                ) : (
+                 <FaChevronDown className="h-5 w-5 text-gray-600 ml-2"/>
+                )}
+                 </button>
+                 {openIndex === index && (
+                   <div className="px-4 py-3 text-gray-700 bg-white border-t">
+                     {item.answer}
+                   </div>
+                 )}
+               </div>
+               ))}
+             </div>
+           </section>
+       
      
      {/* Features Cars Section */} 
 
